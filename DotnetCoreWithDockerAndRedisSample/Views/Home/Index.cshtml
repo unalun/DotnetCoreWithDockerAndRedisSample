@@ -1,0 +1,12 @@
+﻿@model DotnetCoreWithDockerAndRedisSample.Models.ViewModel.ProductVm
+
+
+
+@{
+    foreach (var item in Model.ProductList)
+    {
+        <h3>@item.Name</h3>
+        <h3>@item.Price</h3>
+        <h3>@item.Description</h3>
+    }
+}
